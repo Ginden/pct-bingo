@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+    <meta charset="UTF-8">
+    <title>Polish conspiracy theory</title>
+</head>
+<body>
+<table></table>
+<script>
+    var theories = [
+        {
+            type: 'jew',
+            description: 'Dziadek Bronisława Komorowskiego Szczynukowicz, zabił prawdziwych Komorowskich i przejął ich tożsamość.'
+        },
+        {
+            type: 'jew',
+            description: 'Andrzej Duda jest kontrolowany przez żonę Żydówkę'
+        },
+        {
+            type: 'jew',
+            description: 'Aleksander Kwaśniewski to Żyd, Stoltzmann'
+        },
+        {
+            type: 'jew',
+            description: 'Lech Kaczyński był Żydem, Kalksteinem'
+        },
+        {
+            type: 'jew',
+            description: 'Janusz Korwin-Mikke to Żyd, Ozjasz Goldberg.'
+        }
+        ,
+        {
+            type: 'jew',
+            description: 'Lech Wałęsa to Żyd, Lejba Kohne'
+        },
+        {
+            type: 'jew',
+            description: 'Jaruzelski stał się Żydem przez kontakty seksualne z Żydówką'
+        },
+        {
+            type: 'big-pharma',
+            description: 'Prywatna służba zdrowia to spisek komunistów, by zniszczyć naród polski'
+        },
+        {
+            type: 'establishment',
+            description: 'Donald Tusk jest kanibalem, którego ofiarą padły setki dzieci'
+        },
+        {
+            type: 'establishment',
+            description: 'Ewa Kopacz nie kupiła szczepionek przeciwko świńskiej grypie, celem ludobójstwa Polaków.'
+        },
+        {
+            type: 'big-pharma',
+            description: 'WHO chciało dokonać ludobójstwa Polaków za pomocą szczepionek przeciwko świńskiej grypie, ale Ewa Kopacz ukradła pieniądze przeznaczone na ich zakup.'
+        },
+        {
+            type: 'establishment',
+            description: 'HGW wyrzuciła tysiące ciał powstańców warszawskich na wysypisko śmieci'
+        },
+        {
+            type: 'smolensk',
+            description: 'W Smoleńsku był zamach dokonany przez rosyjskie służby specjalne'
+        },
+        {
+            type: 'smolensk',
+            description: 'W Smoleńsku był zamach dokonany przez polskie służby specjalne'
+        },
+        {
+            type: 'smolensk',
+            description: 'W Smoleńsku był zamach dokonany przez Antoniego Macierewicza'
+        },
+        {
+            type: 'smolensk',
+            description: 'W Smoleńsku był zamach dokonany przez Antoniego Macierewicza'
+        },
+        {
+            type: 'ozjasz',
+            description: 'Janusz Korwin-Mikke to rosyjski agent, mający na celu skompromitowanie liberalizmu i utrzymanie w ten sposób Polski w biedzize'
+        },
+        {
+            type: 'ozjasz',
+            description: 'Janusz Korwin-Mikke to amerykański agent, który przez swój radykalizm, ma sprawić, że skrajnie neoliberalni politycy mainstreamu wydają się dzielić na prawicę i lewicę'
+        },
+        {
+            type: 'establishment',
+            description: 'Dziadek Donalda Tuska był SSmanem'
+        },
+        {
+            type: 'establishment',
+            description: 'Córka Donalda Tuska kupuje jednego dnia Mercedesa klasy S za gotówkę i apartament za milion'
+        },
+        {
+            type: 'jew',
+            description: 'W Polsce obowiązuje tajny podatek koszerny.'
+        },
+        {
+            type: 'smolensk',
+            description: 'W Smoleńsku były dwa samoloty, jeden podrzucony przez Rosjan.'
+        },
+        {
+            type: 'smolensk',
+            description: 'Samolot prezydencki został porwany, a pasażerowie zamordowani w tajnej bazie wojskowej pod Moskwą. Pod Smoleńskiej podrzucono fałszywkę'
+        },
+        {
+            type: 'jew',
+            description: 'Kanalizacja w Warszawie to spisek Żydów i masonerii przeciwko polskiemu rolnictwu i element ludobójstwa Polaków'
+        },
+        {
+            type: 'lgbt',
+            description: 'Geje to imigranci z krajów Zachodu wysłani celem zniszczenia polskiej kultury'
+        },
+        {
+            type: 'establishment',
+            description: 'Tomasz Lis to tak naprawdę Tomasz Lisienko, potomek białoruskich komunistów'
+        }
+        
+
+
+    ];
+    var size = Math.ceil(Math.sqrt(theories.length));
+    var q = 0;
+    var tr, td;
+    for(var i = 0; i < size; i++) {
+        tr = document.createElement('tr');
+        document.querySelector('table').applyElement(tr);
+        for(var j = 0; j < size; j++) {
+            if (theories[q]) {
+                td = document.createElement('td');
+                td.setAttribute('class', theories[q].type);
+                td.textContent = theories[q].description;
+                tr.appendChild(td);
+                q++;
+            }
+        }
+    }
+</script>
+</body>
+</html>
