@@ -112,8 +112,12 @@
         {
             type: 'establishment',
             description: 'Tomasz Lis to tak naprawdę Tomasz Lisienko, potomek białoruskich komunistów'
+        },
+        {
+            type: 'establishment',
+            description: 'Tomasz Lis to tak naprawdę Tomasz Lisienko, potomek białoruskich komunistów'
         }
-        
+
 
 
     ];
@@ -122,7 +126,7 @@
     var tr, td;
     for(var i = 0; i < size; i++) {
         tr = document.createElement('tr');
-        document.querySelector('table').applyElement(tr);
+        document.querySelector('table').appendChild(tr);
         for(var j = 0; j < size; j++) {
             if (theories[q]) {
                 td = document.createElement('td');
